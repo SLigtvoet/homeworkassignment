@@ -17,12 +17,40 @@ function rest(hero) {
 
 }
 
-function pickUpItem() {
-
-}
-
 function equipWeapon() {
 
 }
 
-let imageInn = document.querySelector()
+//image
+let imageInn = document.querySelector('#inn');
+let weaponDagger = document.querySelector('#dagger');
+let containerBag = document.querySelector('#bag');
+
+// event listeners
+
+imageInn.addEventListener('click', function() {
+    changeProperty();
+
+})
+
+weaponDagger.addEventListener('click', function() {
+
+})
+
+containerBag.addEventListener('click', function(){
+    
+})
+
+// functions
+
+function changeProperty() {
+    hero.health = 10;
+}
+
+function pickUpItem () {
+    hero.inventory.push(hero.weapon);
+}
+
+pickUpItem();
+
+console.log(hero.inventory);
