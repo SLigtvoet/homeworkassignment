@@ -88,7 +88,9 @@ let submitButton = document.getElementById("submitButton")
 
 submitButton.addEventListener('click', function() {
     let newName = document.getElementById("newName").value;
+    document.getElementById("newName").value='';
     setName(newName);
+    displayStats();
 
 });
 
@@ -97,7 +99,6 @@ function setName (name) {
 
 }
 
-console.log(hero.name);
 
 
 
