@@ -75,7 +75,7 @@ function equipWeapon(hero) {
 
 
 function displayStats() {
-    document.getElementById("characteristics").innerHTML = hero.health + ' ' +  hero.name + hero.weapon.type + hero.weapon.damage;
+    document.getElementById("characteristics").innerHTML = 'Your hero\'s name is: ' + hero.name + '<br>' + 'Current health: ' + hero.health + '<br>' + 'You\'re currently wielding: ' + hero.weapon.type + '<br>' + 'Damage: ' + hero.weapon.damage;
     }
 
 displayStats();
